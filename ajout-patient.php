@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,21 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" method="post">
-    <label for="nom">Nom : </label>
-        <input type="text" name="nom" id="nom">
+    <form action="./process/process-create-user.php" method="post">
+    <label for="lastname">Nom : </label>
+        <input type="text" name="lastname" id="lastname">
 
-        <label for="prenom">Prenom : </label>
-        <input type="text" name="prenom" id="prenom">
+        <label for="firstname">Prenom : </label>
+        <input type="text" name="firstname" id="firstname">
 
         <label for="birthdate">Date de naissance : </label>
-        <input type="text" name="birthdate" id="nom">
+        <input type="date" name="birthdate" id="bithdate">
 
         <label for="phone">Tel : </label>
-        <input type="text" name="phone" id="phone">
+        <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" placeholder="Ex:0609056785">
 
         <label for="mail">Mail : </label>
-        <input type="text" name="mail" id="mail">
+        <input type="email" name="mail" id="mail">
         
 
 
