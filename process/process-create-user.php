@@ -14,7 +14,8 @@ $sql = "INSERT INTO patients (lastname, firstname, birthdate, phone, mail)
 
 try {
     $stmt = $pdo->prepare($sql);
-    $patients = $stmt->execute([
+    // (avant tu avais mis $patient = $stmt mais pas nécéssaire car code utilise insert into patient)
+    $stmt->execute([
         ':lastname' => $_POST["lastname"],
         ':firstname' => $_POST["firstname"],
         ':birthdate' => $_POST["birthdate"],

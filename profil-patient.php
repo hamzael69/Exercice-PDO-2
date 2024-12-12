@@ -9,7 +9,7 @@ if (
 $sql = "SELECT * FROM patients WHERE id = {$id} ";
 
 try {
-    
+    // (utiliser prepare et execucute plutot que query pour de la securité)
     $stmt = $pdo->query($sql);
     $patient = $stmt->fetch(PDO::FETCH_ASSOC);
 } catch (PDOException $error) {
